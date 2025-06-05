@@ -114,7 +114,9 @@ class RandomSelectionWithinSubsets(QgisAlgorithm):
         return self.tr("Random selection within subsets")
 
     def shortDescription(self):
-        return self.tr("Takes a vector layer and within a subset, randomly selects features.")
+        return self.tr(
+            "Takes a vector layer and within a subset, randomly selects features."
+        )
 
     def processAlgorithm(self, parameters, context, feedback):
         layer = self.parameterAsVectorLayer(parameters, self.INPUT, context)
